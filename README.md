@@ -6,6 +6,12 @@ Natural-language analytics behind a SQLite authorizer.
 
 **Role focus:** Applied AI / Data Backend. **Status:** working local portfolio implementation, with synthetic data.
 
+## Demo
+
+![How Read-only SQL Assistant works](docs/demo.gif)
+
+Edited replay of captured CLI outputs in deterministic fixture mode. This is not live model inference. [Full recording](docs/demo.mp4). Rebuild with `./scripts/render_gif.sh` (FFmpeg required).
+
 ## The engineering decision
 
 An LLM may propose SQL, but a separate SQLite read-only URI, query-only connection and authorizer decide whether it can run. Table/function allowlists, operation limits and row caps constrain execution.
