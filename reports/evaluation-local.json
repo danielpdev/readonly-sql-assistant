@@ -1,0 +1,31 @@
+{
+  "mode": "local",
+  "python": "3.12.13",
+  "recorded_at": "2026-10-31T13:43:44.120732+00:00",
+  "elapsed_seconds": 1.3613,
+  "result": {
+    "passed": true,
+    "scenario": {
+      "sql": "SELECT region, SUM(amount_cents) FROM orders GROUP BY region",
+      "result": {
+        "columns": [
+          "region",
+          "SUM(amount_cents)"
+        ],
+        "rows": [
+          [
+            "Romania",
+            23500
+          ],
+          [
+            "Spain",
+            19000
+          ]
+        ],
+        "truncated": false
+      },
+      "mode": "local",
+      "write_blocked": "Query blocked or invalid: not authorized"
+    }
+  }
+}
